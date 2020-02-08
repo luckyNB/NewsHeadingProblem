@@ -27,7 +27,7 @@ public class NewsHeadings {
         int value = 0;
         String mostPopular="";
         for (Map.Entry<String, Integer> val : mapData.entrySet()) {
-            if (val.getKey().contains(mostOccuredWord )) {
+            if (val.getKey().contains(" "+mostOccuredWord+" " )) {
                       if ( val.getValue()>value){
                           value=val.getValue();
                           mostPopular=val.getKey();
